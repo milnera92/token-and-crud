@@ -1,0 +1,1 @@
+const pgPassword = process.env.PG_PASSWORD;
