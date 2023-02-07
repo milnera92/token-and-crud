@@ -1,8 +1,8 @@
 # token-and-crud
 
 # To-Do:
--Finish simple front end for testing this
--figure out how to access stored token in DB to be used when in the verifyToken function. Not working as I currentrly have it, but I do get the ""Access Denied, No Token Provided" error.
+-Finish simple front end for testing these endpoints
+-figure out how to access stored token in DB to be used when in the verifyToken function. Not working as I currentrly have it, but I do get the ""Access Denied, No Token Provided" error
 - use that token and test all the products enpoints, either in Postman/Insomnia gui or just try in the browser going to http://localhost:5000/products/ etc...
 - host node.js server on Render.com, add code to connect to the front end if hosted seperatly somwhere. Store the PG password from .env to the secret keys on Render
 
