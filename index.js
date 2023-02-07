@@ -45,7 +45,7 @@ const verifyToken = (req, res, next) => {
 app.get("/products", verifyToken, (req, res) => {
   let query;
   if (req.user.permission === "read_product") {
-    query = "SELECT * FROM products WHERE active = true";
+    query = "SELECT * FROM products WHERE status = active";
   } else if (req.user.permission === "admin") {
     query = "SELECT * FROM products";
   } else {
@@ -61,7 +61,7 @@ app.get("/products", verifyToken, (req, res) => {
 app.get("/products/:id", verifyToken, (req, res) => {
   let query;
   if (req.user.permission === "read_product") {
-    query = "SELECT * FROM products WHERE active = true AND id = $1";
+    query = "SELECT * FROM products WHERE status = active AND id = $1";
   } else if (req.user.permission === "admin") {
     query = "SELECT * FROM products WHERE id = $1";
   } else {
