@@ -1,5 +1,12 @@
 # token-and-crud
 
+# To-Do:
+-Finish simple front end for testing this
+-figure out how to access stored token in DB to be used when in the verifyToken function. Not working as I currentrly have it, but I do get the ""Access Denied, No Token Provided" error.
+- use that token and test all the products enpoints, either in Postman/Insomnia gui or just try in the browser going to http://localhost:5000/products/ etc...
+- host node.js server on Render.com, add code to connect to the front end if hosted seperatly somwhere. Store the PG password from .env to the secret keys on Render
+
+# Completed So Far:
 Hosting the PostgresSQL DB on ElephantSQL:
 ![image](https://user-images.githubusercontent.com/95140821/217340093-de2b508a-5eb6-45f2-b417-1d62feb88858.png)
 
