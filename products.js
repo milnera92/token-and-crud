@@ -6,10 +6,11 @@ const { Client } = require("pg");
 dotenv.config();
 
 const SECRET_KEY = process.env.SECRET_KEY;
-const PG_URI = process.env.PG_URI;
+const pgPassword = process.env.PG_PASSWORD;
+
 
 const client = new Client({
-  connectionString: PG_URI,
+  connectionString: `postgres://morqftzh:${pgPassword}@jelani.db.elephantsql.com/morqftzh`
 });
 
 client.connect();
