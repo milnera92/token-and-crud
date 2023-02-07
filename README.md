@@ -29,7 +29,7 @@ We can also use the following endpoints to generate tokens, which are also store
 I've written these handlers for the tokens that the endpoints call:
 ![image](https://user-images.githubusercontent.com/95140821/217340901-c9a65344-3f00-470e-8979-22a998542a08.png)
 
-But for the productrs I just have the function right in the endpoint. Need to change this:
+But for the products I just have the function right in the endpoint. Need to change this:
 ![image](https://user-images.githubusercontent.com/95140821/217340984-490bd72d-a40f-4ef1-928b-45e04abe23d1.png)
 
 
