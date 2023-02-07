@@ -7,13 +7,13 @@ const client = new Client({
   connectionString: `postgres://morqftzh:${pgPassword}@jelani.db.elephantsql.com/morqftzh`
 });
 
-const secretKey = "secret-key";
+const SECRET_KEY = process.env.SECRET_KEY;
 const expiresIn = "10m";
 
 // Endpoint A: Generate a token with read_product permission
 exports.generateReadToken = async (req, res) => {
   try {
-    const token = jwt.sign({ permission: "read_product" }, secretKey, {
+    const token = jwt.sign({ permission: "read_product" }, SECRET_KEY, {
       expiresIn,
     });
 
@@ -27,7 +27,7 @@ exports.generateReadToken = async (req, res) => {
 // Endpoint B: Generate a token with manage_product permission
 exports.generateManageToken = async (req, res) => {
   try {
-    const token = jwt.sign({ permission: "manage_product" }, secretKey, {
+    const token = jwt.sign({ permission: "manage_product" }, SECRET_KEY, {
       expiresIn,
     });
 
@@ -43,7 +43,7 @@ exports.generateReadManageToken = async (req, res) => {
   try {
     const token = jwt.sign(
       { permission: ["read_product", "manage_product"] },
-      secretKey,
+      SECRET_KEY,
       {
         expiresIn,
       }
@@ -59,7 +59,7 @@ exports.generateReadManageToken = async (req, res) => {
 // Endpoint D: Generate a token with admin permission
 exports.generateAdminToken = async (req, res) => {
   try {
-    const token = jwt.sign({ permission: "admin" }, secretKey, {
+    const token = jwt.sign({ permission: "admin" }, SECRET_KEY, {
       expiresIn,
     });
 
