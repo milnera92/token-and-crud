@@ -1,5 +1,5 @@
 # How to Use:
-in Insomnia or Postman, go to https://token-crud-test.onrender.com/ and one of the following endpoints to generate a token:
+In Insomnia or Postman, go to https://token-crud-test.onrender.com/ and one of the following endpoints to generate a token:
 GET /generate-read-token
 GET /generate-manage-token
 GET /generate-read-manage-token
