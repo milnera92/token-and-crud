@@ -19,6 +19,7 @@ Seeded in some test data:
 ![image](https://user-images.githubusercontent.com/95140821/217340389-e68b133c-2fec-45d8-b8c2-a04f0bacd0a7.png)
 
 Now we have some products! (Price needs to be fixed, changed price to floating point):
+*This has been fixed, price now TYPE FLOAT
 ![image](https://user-images.githubusercontent.com/95140821/217340567-a1a2d5d2-f6d9-4939-9ad7-16d245f894ef.png)
 
 
