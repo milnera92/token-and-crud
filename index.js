@@ -27,6 +27,8 @@ client.connect();
 
 app.use(express.json());
 
+
+// Verify that the token is valid and that is the correct one for the operation being  performed
 const verifyToken = (req, res, next) => {
   const token = req.headers["authorization"];
   if (!token) {
