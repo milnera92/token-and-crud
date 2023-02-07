@@ -1,9 +1,9 @@
 # How to Use:
 In Insomnia or Postman, go to https://token-crud-test.onrender.com/ and one of the following endpoints to generate a token:
-GET /generate-read-token
-GET /generate-manage-token
-GET /generate-read-manage-token
-GET /generate-admin-token
+- GET /generate-read-token
+- GET /generate-manage-token
+- GET /generate-read-manage-token
+- GET /generate-admin-token
 
 So https://token-crud-test.onrender.com/generate-read-token for example will give 
 {
@@ -11,12 +11,12 @@ So https://token-crud-test.onrender.com/generate-read-token for example will giv
 }
 
 Take the token, and go to one of the following endpoints in the product service:
-GET /products
-GET /products/:id"
-POST /products
-PUT /products/:id
-DELETE /products/:id
-DELETE /products/:id/hard
+- GET /products
+- GET /products/:id"
+- POST /products
+- PUT /products/:id
+- DELETE /products/:id
+- DELETE /products/:id/hard
 
 For example, https://token-crud-test.onrender.com/products with the headers set like the following : 
 
