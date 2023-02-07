@@ -6,9 +6,9 @@ In Insomnia or Postman, go to https://token-crud-test.onrender.com/ and one of t
 - GET /generate-admin-token
 
 So https://token-crud-test.onrender.com/generate-read-token for example will give 
-{
+<code>{
 	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJtaXNzaW9uIjoicmVhZF9wcm9kdWN0IiwiaWF0IjoxNjc1ODExMjg0LCJleHAiOjE2NzU4MTE4ODR9.YMZqFAUejyf8IzHQzfvUrbqaPTYnVh3OVGzcsOWZhFw"
-}
+}</code>
 
 Take the token, and go to one of the following endpoints in the product service:
 - GET /products
@@ -23,7 +23,7 @@ For example, https://token-crud-test.onrender.com/products with the headers set 
 ![image](https://user-images.githubusercontent.com/95140821/217388097-6f7a8cc6-acb3-4ed4-a816-537339036d5f.png)
 
 Will return these items from the database hosted on ElephantSQL:
-
+<code>
 [
 	{
 		"id": 1,
@@ -44,7 +44,7 @@ Will return these items from the database hosted on ElephantSQL:
 		"updated_at": "2023-02-07T15:52:01.295Z"
 	}
 ]
-
+</code>
 That's it !
 
 # To-Do:
